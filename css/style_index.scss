@@ -145,25 +145,22 @@ table {
     background-attachment: fixed;
 }
 
-.header{
+.header {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    height: 4vh;
-    font-size: 42px;
-    color:black;
-    text-align: center;
-    padding:6px;
-    text-align: center;
-    text-decoration: none;
-    color:black;
-    .header-container
-    {
+
+    .header-container {
+        background-color: white;
         display: flex;
         flex-direction: row;
-
+        justify-content: center;
+        li{
+            padding: 0 8%;
+            a{
+                font-size: 30px;
+                text-decoration: none;
+                color: #000;
+            }
+        }
     }
-}
 
-.li{
-    padding-left: 10px;
 }

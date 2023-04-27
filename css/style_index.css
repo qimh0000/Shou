@@ -121,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -134,11 +134,15 @@ table {
 .wrap {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-  align-items: center;
-  justify-self: center;
-  background-image: url(../images/Index/index_bg_02.png);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-image: url(../images/Index/index_bg.webp);
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -146,22 +150,30 @@ table {
 }
 
 .header {
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  height: 4vh;
-  font-size: 42px;
-  color: black;
-  text-align: center;
-  padding: 6px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.header .header-container {
-  display: flex;
-  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
 }
 
-.li {
-  padding-left: 10px;
-}/*# sourceMappingURL=style_index.css.map */
+.header .header-container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-container li {
+  padding: 0 8%;
+}
+
+.header .header-container li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=style_index.css.map */
