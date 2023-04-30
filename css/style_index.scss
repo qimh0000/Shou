@@ -152,10 +152,11 @@ table {
         background-color: white;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        li{
-            padding: 0 8%;
-            a{
+
+        li {
+            padding: 1vh 8%;
+
+            a {
                 font-size: 30px;
                 text-decoration: none;
                 color: #000;
@@ -163,4 +164,26 @@ table {
         }
     }
 
+}
+
+.videoPC{
+    display: block;
+}
+.videoMobile{
+    display: none;
+}
+
+@media(max-width: 500px) {
+    .wrap {
+        .header{
+            display: none;
+        }
+        .videoPC{
+            display: none;
+        }
+        .videoMobile{
+            display: block;
+        }
+        background-image: url(../images/Index/index_bg_phone.webp);
+    }
 }

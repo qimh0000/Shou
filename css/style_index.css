@@ -152,13 +152,35 @@ table {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 .header .header-container li {
-  padding: 0 8%;
+  padding: 1vh 8%;
 }
 .header .header-container li a {
   font-size: 30px;
   text-decoration: none;
   color: #000;
+}
+
+.videoPC {
+  display: block;
+}
+
+.videoMobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    background-image: url(../images/Index/index_bg_phone.webp);
+  }
+  .wrap .header {
+    display: none;
+  }
+  .wrap .videoPC {
+    display: none;
+  }
+  .wrap .videoMobile {
+    display: block;
+  }
 }/*# sourceMappingURL=style_index.css.map */
