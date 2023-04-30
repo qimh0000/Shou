@@ -155,7 +155,8 @@ table {
 
         li {
             padding: 1vh 8%;
-
+            position: relative;
+            z-index:1;
             a {
                 font-size: 30px;
                 text-decoration: none;
@@ -166,11 +167,25 @@ table {
 
 }
 
+
 .videoPC{
     display: block;
+    position: fixed;
+    width: 50vw;
+    margin-top: -250px;
+    left: 55vw;
 }
 .videoMobile{
     display: none;
+}
+
+@media(max-width: 2260px){
+    .videoPC{
+        position: fixed;
+        width: 1000px;
+        margin-top: -190px;
+        left: 1300px;
+    }
 }
 
 @media(max-width: 500px) {

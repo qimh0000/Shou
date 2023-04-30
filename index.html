@@ -19,6 +19,7 @@
 
     <!--以下可做更改-->
     <link rel="stylesheet" href="css/style_index.css#456">
+
 </head>
 
 <body>
@@ -37,14 +38,33 @@
             </ul>
         </div>
         <div class="video">
-            <video class="videoPC" width="600" height="100%" autoplay loop muted playsinline>
-                <source src="images/Index/ShouMotion_B.mov" type='video/mp4; codecs="hvc1"'>
-                <source src="images/Index/ShouMotion_B.webm" type="video/webm">
+            <video class="videoPC videoPulse" loop muted playsinline>
+                <source src="images/Index/ShouMotionLoop.mov" type='video/mp4; codecs="hvc1"'>
+                <source src="images/Index/ShouMotionLoop.webm" type="video/webm">
             </video>
             <video class="videoMobile" width="50%" height="100%" autoplay loop muted playsinline>
 
             </video>
         </div>
+        <script>
+  
+            // Targeting video element 
+            let clip = document.querySelector(".videoPulse")
+      
+            /* Applying mouseover event on video clip 
+            and then we call play() function to play 
+            the video when the mouse is over the video */
+            clip.addEventListener("mouseover", function (e) {
+                clip.play();
+            })
+      
+            /* Applying mouseout event on video clip 
+            and then we call pause() function to stop 
+            the video when the mouse is out the video */
+            clip.addEventListener("mouseout", function (e) {
+                clip.pause();
+            })
+        </script>
     </div>
 </body>
 
