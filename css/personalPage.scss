@@ -1,45 +1,598 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* CSS Document */
+html,
+body {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	height: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
-/*以下正式開始*/
+.logo {
+	display: block;
+	position: absolute;
+	left: 2.5%;
+	bottom: 3%;
+	width: auto;
+	/* height: auto; */
+}
+
+.logo a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+
+main {
+	overflow-x: hidden;
+	position: relative;
+	height: 100%;
+}
+
+
+
+.personalbox {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 100%;
+	min-width: 4000px;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/Personal/bg.JPG');
+	background-position: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: black;
+	/* background-color: aqua; */
+}
+
+.column_right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	width: 20%;
+	min-width: 400px;
+	height: 100%;
+	margin-right: 2%;
+	/* z-index: 20; */
+}
+
+.column_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 80vw;
+	min-width: 1000px;
+	padding-left: 50px;
+}
+
+.column_middle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	min-width: 2500px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	/* Chrome Safari */
+}
+
+.btn_back {
+	display: block;
+	position: absolute;
+	left: 3%;
+	top: 3.5%;
+	width: auto;
+	height: auto;
+	z-index: 8;
+
+}
+
+.btn_next {
+	display: block;
+	position: absolute;
+	right: -120%;
+	top: 4%;
+	width: auto;
+	height: auto;
+	z-index: 8;
+
+}
+
+.worktitle_ch {
+	display: block;
+	width: auto;
+	height: auto;
+	font-size: 2.55em;
+	text-align: right;
+	/* letter-spacing: 0.05em; */
+	color: white;
+	font-family: Noto Sans CJK TC, sans-serif;
+}
+
+
+.workinfo_time {
+	display: block;
+	width: auto;
+	height: auto;
+	color: white;
+	text-align: right;
+	font-family: Noto Sans CJK TC, sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.3em;
+	padding-bottom: 30vh;
+}
+
+.workinfo_introduction {
+	width: auto;
+	height: auto;
+	color: white;
+	text-align: right;
+	font-family: Noto Sans CJK TC, sans-serif;
+	font-size: 1.26em;
+	letter-spacing: 0.16em;
+	line-height: 1.2em;
+}
+
+.workinfo_sentence {
+	display: block;
+	position: absolute;
+	bottom: 20%;
+	left: 40%;
+	width: 80vh;
+	height: auto;
+	color: white;
+	font-size: 4vh;
+	letter-spacing: 0.27em;
+	line-height: 0.45em;
+	font-family: Noto Sans CJK TC, sans-serif;
+}
+
+.workinfo {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slogan {
+	display: block;
+	width: 200%;
+	height: auto;
+	color: white;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 6vh;
+	letter-spacing: 0.15em;
+	line-height: 0.275em;
+	font-family: Noto Sans CJK TC, sans-serif;
+	z-index: 20;
+	padding-top: 8%;
+}
+
+.personalInfo {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 3%;
+	height: 20vh;
+	width: 50%;
+	margin-bottom: 10%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.headshot {
+	height: 100%;
+	align-content: center;
+	padding-right: 6%;
+	img {
+		height: 100%;
+	}
+}
+
+.star_logo {
+	display: block;
+	position: absolute;
+	left: 45%;
+	bottom: 98%;
+	width: 35%;
+	height: 10%;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.name_01 {
+	display: block;
+	width: auto;
+	height: auto;
+	color: white;
+	font-size: 3vh;
+	letter-spacing: 0.2em;
+	padding-bottom: 5%;
+}
+
+.name_02 {
+	display: block;
+	width: auto;
+	height: auto;
+	color: white;
+	font-size: 2vh;
+	letter-spacing: 0.115em;
+	/*background-color: #C892FF;*/
+}
+
+.personal_link {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 1vh;
+	letter-spacing: 0.115em;
+
+}
+
+.personal_link span {
+	padding-top: 3%;
+}
+
+.personal_artwork_link a {
+	color: white;
+	text-decoration: none;
+}
+
+.personal {
+	display: block;
+	width: auto;
+	color: white;
+	text-align: right;
+	font-size: 0.9em;
+	letter-spacing: 0.2em;
+	padding-bottom: 20%;
+}
+
+
+
+.video {
+	display: block;
+	height: 60%;
+}
+
+.imgs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding-right: 2%;
+}
+
+.imgs img {
+	height: 100%;
+}
+
+.img1 {
+	display: block;
+	height: 25vh;
+	padding-bottom: 10.5%;
+}
+
+.img2 {
+	display: block;
+	height: 25vh;
+}
+
+.personalboxPhone{
+	display: none;
+}
+
+@media(max-width:1000px){
+	main{
+		display: none;
+	}
+	.personalboxPhone{
+		display: flex;
+	}
+
+	html,body{
+		margin: 0;
+		padding: 0;
+		background-color:black;
+		height: 100%;
+		width: auto;
+		overflow: hidden;
+	  }
+	  
+	.logo{
+		display:block;
+		position: absolute;
+		left: 3%;
+		top:130%;
+		width:auto;
+		opacity: 0;
+	}
+	.bg{
+		display: block;
+		position: absolute;
+		width: 400vh;
+		
+	}
+	
+	.bg img{
+		width: 100%;
+	}
+	
+	.big_logo{
+		  position: absolute;
+		top:15vh;
+		left: 0%;
+		opacity: 0;
+	}
+	
+	.personalbox{
+	  display: block;
+	  position: fixed;
+	  width: 150vw;
+	  height: 150vh;
+	  top: 0%;
+	  right: 0%;
+	  /* 水平置中 */
+	  justify-content: center;    
+	  /* 垂直置中 */
+	  align-content: center;      
+	  flex-wrap: wrap;
+	}
+	
+	.column_down {
+	  display: block;
+	  position: fixed;
+	  left: 0%;
+	  bottom: 0%;
+	  width: 165vw;
+	  height: 25vh;
+	  overflow: hidden;
+	  justify-content: center;    
+	  align-content: center;      
+	  flex-wrap: wrap;
+	  max-width: 100%
+	}
+	
+	::-webkit-scrollbar {
+	  display: none; /* Chrome Safari */
+	}
+	
+	.btn_back{
+		display:block;
+		position: absolute;
+		left: 5%;
+		top:2%;
+		width:auto;
+		height: auto;
+		z-index: 8;
+		
+	}
+	.btn_next{
+		display:block;
+		position: absolute;
+		left: 20%;
+		top:2%;
+		width:auto;
+		height: auto;
+		z-index: 8;
+		
+	}
+	.personal{
+		display: block;
+		position: absolute;
+		width: 50%;
+		left:65%;
+		top: 42.5%;
+		color:white;
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		max-width: 80%
+	}
+	
+	.worktitle_ch{
+		display:block;
+		position: absolute;
+		width: auto;
+		height: auto;
+		font-size: 4em;
+		/* letter-spacing: 0.05em; */
+		color:white;
+		right: 10.5%;
+		top:48%;
+		font-family: Noto Sans CJK TC, sans-serif;
+	}
+	
+	
+	.workinfo_time{
+		display: block;
+		position: absolute;
+		right: 10.5%;
+		top:52%;
+		width: auto;
+		height:auto;
+		color:white;
+		font-family: Noto Sans CJK TC, sans-serif;
+		font-size: 2em;
+		letter-spacing: 0.3em;
+	}
+	
+	.workinfo_introduction{
+		position: absolute;
+		right: 9.5%;
+		top: 61.5%;
+		width: auto;
+		height:auto;
+		color:white;
+		text-align: right;
+		font-family: Noto Sans CJK TC, sans-serif;
+		font-size: 1.9em;
+		letter-spacing: 0.16em;
+		line-height: 1.2em;
+	}
+	
+	.workinfo_sentence{
+		display: block;
+		position: absolute;     
+		right:20%;
+		top: 75%;
+		width: 65vh;
+		height:auto;
+		color:white;
+		font-size: 4em;
+		letter-spacing: 0.27em;
+		line-height: 0.45em;
+		font-family: Noto Sans CJK TC, sans-serif;
+	}
+	
+	.slogan{
+		display: block;
+		position: absolute;
+		left:3%;
+		top: 2.5%;
+		width: 95%;
+		height:auto;
+		color:black;
+		/* background: #ffffff; */
+		font-size: 5.5em;
+		letter-spacing: 0.2em;
+		line-height: 0.275em;
+		font-family: Noto Sans CJK TC, sans-serif;
+		z-index: 20;
+		
+	}
+	.undershot{
+		display: block;
+		position: absolute;
+		right:0%;
+		top:0%;
+		width: 100%;
+		height:100%;
+		background-color: black;
+		opacity: 1;
+	}
+	
+	.headshot{
+		display: block;
+		position: absolute;
+		right: 70%;
+		top:12.5%;
+		width: 20%;
+		height:5%;
+		/* background-color: black; */
+	}
+	
+	.headshot img{
+		position: absolute;
+		width: 100%;
+	}
+	
+	.name_01{
+		display: block;
+		position: absolute;
+		left:55.5%;
+		top: 10%;
+		width: auto;
+		height:auto;
+		color:white;
+		font-size: 7.5em;
+		letter-spacing: 0.2em;
+		
+	}
+	
+	.name_02{
+		display: block;
+		position: absolute;
+		left:57.5%;
+		top: 45%;
+		width: auto;
+		height:auto;
+		color:white;
+		font-size: 3em;
+		letter-spacing: 0.115em;
+		/*background-color: #C892FF;*/
+	}
+	
+	.personal_link{
+		display: block;
+		position: absolute;
+		left:54%;
+		top: 62%;
+		width:100%;
+		height:5%;
+		color:white;
+		font-size: 2em;
+		letter-spacing: 0.115em;
+		
+	}
+	.personal_artwork_link{
+		display: block;
+		position: absolute;
+		left:14.5%;
+		top:250%;
+		color:white;
+		font-size: 0.9em;
+	}
+	
+	.workinfo{
+		display: block;
+		width: 50%;
+		overflow: hidden;
+	}
+	
+	.video{
+		display:block;
+		position: absolute;
+		right: 10%;
+		top: 14.5%;
+		width:85%;
+		height: auto;
+	}
+	
+	.imgs{
+		display: block;
+		width:100%;
+		height:100%;
+		overflow: hidden;
+	}
+	.imgs img{
+		width: 100%;
+	}
+	
+	.img1{
+		display: block;
+		position: absolute;
+		right: 45%;
+		top: 42.5%;
+		width: 50%;
+		height:auto;
+		max-width: 100%
+	}
+	
+	.img2{
+		display: block;
+		position: absolute;
+		right: 45%;
+		top: 59%;
+		width: 50%;
+		height:auto;
+	}
+	
+}
