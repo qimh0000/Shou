@@ -2,13 +2,28 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<input type="hidden" id="_w_pedant"> -->
-	<!--瓜號內要換同學名-->
-	<title>個人頁</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <!--網頁資訊-->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>SCCD 2023 Degree Show 獸</title>
+    <!--Global site tag (gtag.js) - Google Analytics-->
+
+	
 	<link rel="stylesheet" href="../../css/personalPage.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--以下可做更改-->
+	<title>個人頁</title>
+
 
 </head>
 
@@ -22,6 +37,7 @@
 	<main>
 		<div class="personalbox">
 			<section class="column_left">
+				<!--很帥的一句話-->
 				<div class="slogan">
 					<p>傳說中，</p>
 					<p>在最靠近月亮的盡頭那裡..。</p>
@@ -40,16 +56,24 @@
 								<div class="name_02">Liang-Hsi,Wang</div>
 							</div>
 							<!--聯絡資訊-->
-							<div class="personal_link">
+							<div class="personal_contact">
 								<!--Email-->
 								<span class="personal_link_mail">theccwangwork@gmail.com</span>
-								<!--個人作品集或社群連結-->
-								<span class="personal_artwork_link">
-									<a href="https://www.behance.net/73c4302e/projects">作品集</a>
-								</span>
+								<div class="personal_link">
+									<!--作品集-->
+									<span class="personal_artwork_link">
+										<a href="https://www.behance.net/73c4302e/projects">作品集</a>
+									</span>
+									<!--社群連結-->
+									<span class="personal_artwork_link">
+										<a href="https://www.behance.net/73c4302e/projects">IG</a>
+									</span>
+									<span class="personal_artwork_link">
+										<a href="https://www.behance.net/73c4302e/projects">FB</a>
+									</span>
+								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</section>
@@ -59,21 +83,18 @@
 				<p>動畫是一種浪漫的表達方式。</p>
 			</div>
 			<section class="column_middle">
-				<!--圖們-->
+				<!--作品圖-->
 				<div class="imgs">
 					<div class="img1"><img src="A108144133_work_1.jpg" alt="mainvisual"></div>
 					<div class="img2"><img src="A108144133_work_2.jpg" alt="mainvisual2"></div>
 				</div>
-				<!--work_1-->
+				<!--影片連結-->
 				<video class="video" src="video.mp4" controls playsinline></video>
-
 			</section>
 			<section class="column_right">
-				<!--作品講述keywork-->
 				<div class="personal">PERSONAL WORK</div>
-				<!--作品標題(中/英)-->
+				<!--作品標題-->
 				<div class="worktitle_ch">月亮的孩子</div>
-				<div class="worktitle_en"></div>
 				<!--作品形式長度-->
 				<div class="workinfo_time">2D動畫<span>｜</span>2分15秒</div>
 				<div class="workinfo">
@@ -91,14 +112,19 @@
 	</main>
 	<!--個人內容區 手機版-->
 	<div class="personalboxPhone">
+		<header id="navbar">
+			<a href="../works.html">GO BACK</a>
+			<a href="../../index.html">HOME PAGE</a>
+		</header>
 		<section class="column_up">
+			<!--很帥的一句話-->
 			<div class="slogan">
 				<p>傳說中，</p>
 				<p>在最靠近月亮的盡頭那裡...</p>
 			</div>
-			<!--work_1-->
+			<!--影片-->
 			<video class="video" src="video.mp4" controls playsinline></video>
-
+			<!--作品資訊-->
 			<div class="workinfo">
 				<!--作品講述keywork-->
 				<div class="personal">PERSONAL WORK</div>
@@ -109,6 +135,7 @@
 				<!--圖們-->
 			</div>
 
+			<!--作品圖1-->
 			<div class="img1"><img src="A108144133_work_1.jpg" alt="mainvisual"></div>
 
 			<!--簡介內容-->
@@ -120,13 +147,14 @@
 				<p>把靈魂送到世界各地。</p>
 			</div>
 			<div class="createImage">
+				<!--作品圖2-->
 				<div class="img2"><img src="A108144133_work_2.jpg" alt="mainvisual2"></div>
+				<!--對創作的想法-->
 				<div class="workinfo_sentence">
 					<p>對我來說，</p>
 					<p>動畫是一種浪漫的表達方式。</p>
 				</div>
 			</div>
-			
 		</section>
 
 
@@ -134,18 +162,30 @@
 			<!--個人照-->
 			<div class="headshot"><img src="head_shot.jpeg" alt="headshot">
 			</div>
-			<!--名字-->
+			<!--個人資訊-->
 			<div class="personalInfo">
 				<div class="name">
+					<!--中文姓名-->
 					<div class="name_01">王 亮晰</div>
+					<!--英文姓名-->
 					<div class="name_02">Liang-Hsi,Wang</div>
 				</div>
-				<div class="personal_link">
+				<div class="personal_contact">
+					<!--Email-->
 					<span class="personal_link_mail">theccwangwork@gmail.com</span>
-					<!--連結區-->
-					<span class="personal_artwork_link">
-						<a href="https://www.behance.net/73c4302e/projects">作品集</a>
-					</span>
+					<div class="personal_link">
+						<!--作品集-->
+						<span class="personal_artwork_link">
+							<a href="https://www.behance.net/73c4302e/projects">作品集</a>
+						</span>
+						<!--社群連結-->
+						<span class="personal_artwork_link">
+							<a href="https://www.behance.net/73c4302e/projects">IG</a>
+						</span>
+						<span class="personal_artwork_link">
+							<a href="https://www.behance.net/73c4302e/projects">FB</a>
+						</span>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -154,18 +194,15 @@
 
 	<!--home button-->
 	<nav>
-		<div class="button">
-			<div class="logo">
-				<a href="../../index.html"><img src="Home_page.png " alt="home_logo">HOME PAGE</a>
-			</div>
+		<div class="logo">
+			<a href="../../index.html"><img src="../../images/Logo.png" alt="home_logo">HOME PAGE</a>
 		</div>
 	</nav>
 
 	<!--back button-->
 	<div class="btn">
-		<a href="../works.html">
-			<div class="btn_back"><img src="btn_back.png" alt="btn_back"></div>
-		</a>
+		<div class="btn_back"><a href="../works.html"><img src="btn_back.png" alt="btn_back"></a></div>
+
 		<!--
 			<div class="btn_next"><img src="btn_next.png" alt="btn_next"></div>-->
 	</div>
@@ -179,6 +216,7 @@
 			scrollContainer.scrollLeft += evt.deltaY;
 		});
 	</script>
+	<script  type="text/javascript" src="../../hideHeader.js"></script>
 </body>
 
 </html>

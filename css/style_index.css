@@ -169,26 +169,35 @@ table {
   position: fixed;
   width: 50vw;
   margin-top: -250px;
-  left: 55vw;
+  left: 45vw;
 }
 
 .videoMobile {
   display: none;
 }
 
+.phone {
+  display: none;
+}
+
 @media (max-width: 2260px) {
   .videoPC {
     position: fixed;
-    width: 1000px;
+    width: 50vw;
     margin-top: -190px;
-    left: 1300px;
+    left: 850px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .wrap {
     background-image: url(../images/Index/index_bg_phone.webp);
+    padding: 3vw;
+    overflow: hidden;
   }
   .wrap .header {
+    display: none;
+  }
+  .wrap .video {
     display: none;
   }
   .wrap .videoPC {
@@ -196,5 +205,61 @@ table {
   }
   .wrap .videoMobile {
     display: block;
+  }
+  .phone {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .SCCD {
+    padding-top: 10px;
+    width: 70vw;
+  }
+  .SCCD img {
+    width: 100%;
+  }
+  .shouContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .shouContainer .infoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .shouContainer .infoContainer .degreeShow {
+    font-family: "Roboto", sans-serif;
+    font-size: 8vw;
+    line-height: 4.2vh;
+    padding: 1.5vh 0;
+  }
+  .shouContainer .infoContainer .exibitInfo {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 4vw;
+  }
+  .shouContainer .infoContainer .exibitInfo p {
+    padding: 0.5vh 0;
+  }
+  .date {
+    font-family: "Roboto", sans-serif;
+  }
+  .videoMobile {
+    display: block;
+    width: 90vw;
+    margin-top: -8vh;
+  }
+  .pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -8vh;
+    z-index: 10;
+  }
+  .pages a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    line-height: 4vh;
+    font-size: 3vh;
   }
 }/*# sourceMappingURL=style_index.css.map */

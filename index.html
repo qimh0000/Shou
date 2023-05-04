@@ -42,22 +42,50 @@
                 <source src="images/Index/ShouMotionLoop.mov" type='video/mp4; codecs="hvc1"'>
                 <source src="images/Index/ShouMotionLoop.webm" type="video/webm">
             </video>
-            <video class="videoMobile" width="50%" height="100%" autoplay loop muted playsinline>
+        </div>
+        <div class="phone">
+            <div class="SCCD">
+                <img src="images/Index/SCCD.webp" alt="SCCD">
+            </div>
+            <div class="shouContainer">
+                <div class="infoContainer">
+                    <div class="degreeShow">
+                        <p>2023</p>
+                        <p>Degree</p>
+                        <p>Show</p>
+                    </div>
+                    <div class="exibitInfo">
+                        <p>臺北流行音樂中心</p>
+                        <div class="date">
+                            <p>05.19(FRI)-05.22(Mon)</p>
+                        </div>
+                    </div>
+                </div>
+                <video class="videoMobile" autoplay loop muted playsinline>
+                    <source src="images/Index/ShouMotionLoop.mov" type='video/mp4; codecs="hvc1"'>
+                    <source src="images/Index/ShouMotionLoop.webm" type="video/webm">
+                </video>
 
-            </video>
+
+            </div>
+            <div class="pages">
+                <a href="Info/info.html">Info</a>
+                <a href="Works/works.html">Works</a>
+                <a href="Product/product.html">Product</a>
+            </div>
         </div>
         <script>
-  
+
             // Targeting video element 
             let clip = document.querySelector(".videoPulse")
-      
+
             /* Applying mouseover event on video clip 
             and then we call play() function to play 
             the video when the mouse is over the video */
             clip.addEventListener("mouseover", function (e) {
                 clip.play();
             })
-      
+
             /* Applying mouseout event on video clip 
             and then we call pause() function to stop 
             the video when the mouse is out the video */
@@ -65,7 +93,6 @@
                 clip.pause();
             })
         </script>
-    </div>
 </body>
 
 </html>
