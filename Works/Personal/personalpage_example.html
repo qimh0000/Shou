@@ -89,7 +89,10 @@
 					<div class="img2"><img src="A108144133_work_2.jpg" alt="mainvisual2"></div>
 				</div>
 				<!--影片連結-->
-				<video class="video" src="video.mp4" controls playsinline></video>
+				<div class="video">
+					<iframe src="https://www.youtube.com/embed/j-OcT_zP1IA" width="1024" height="576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						allowfullscreen></iframe>
+				</div>
 			</section>
 			<section class="column_right">
 				<div class="personal">PERSONAL WORK</div>
@@ -123,7 +126,10 @@
 				<p>在最靠近月亮的盡頭那裡...</p>
 			</div>
 			<!--影片-->
-			<video class="video" src="video.mp4" controls playsinline></video>
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/j-OcT_zP1IA" width="1024" height="576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen></iframe>
+			</div>
 			<!--作品資訊-->
 			<div class="workinfo">
 				<!--作品講述keywork-->
@@ -215,6 +221,7 @@
 			evt.preventDefault();
 			scrollContainer.scrollLeft += evt.deltaY;
 		});
+		scrollContainer.addEventListener("wheel", console.log(yes));
 	</script>
 	<script  type="text/javascript" src="../../hideHeader.js"></script>
 </body>

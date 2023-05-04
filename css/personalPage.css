@@ -253,6 +253,7 @@ main {
   height: 100%;
   width: 100%;
   min-width: 1500px;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -453,8 +454,20 @@ main {
 }
 
 .video {
-  display: block;
-  height: 80%;
+  margin-right: 5vw;
+  position: relative;
+  width: 1152px;
+  height: 648px;
+  max-width: 100%;
+  max-height: calc((100vw - 40px) / 1.7777777778);
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .imgs {
@@ -463,7 +476,7 @@ main {
   justify-content: flex-start;
   height: 100%;
   padding-right: 2%;
-  margin-top: 20vh;
+  padding-top: 20vh;
 }
 
 .imgs img {
@@ -566,11 +579,13 @@ main {
     padding: 2px;
     margin-bottom: 0.8vh;
   }
+  /*
+
   .video {
-    width: 100%;
-    height: auto;
-    padding: 2vh 0;
-  }
+  	width: 100%;
+  	height: auto;
+  	padding: 2vh 0;
+  }*/
   .workinfo {
     display: flex;
     flex-direction: column;
