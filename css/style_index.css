@@ -121,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -134,10 +134,14 @@ table {
 .wrap {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-  align-items: center;
-  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   background-image: url(../images/Index/index_bg.webp);
   height: 100vh;
   width: 100vw;
@@ -146,22 +150,37 @@ table {
 }
 
 .header {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
 .header .header-container {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .header .header-container li {
   padding: 1vh 8%;
   position: relative;
   z-index: 1;
 }
+
 .header .header-container li a {
+  -webkit-transition: color 0.2s;
+  /* For Safari 3.0 to 6.0 */
+  transition: color 0.2s;
   font-size: 30px;
   text-decoration: none;
   color: #000;
+}
+
+.header .header-container a:hover {
+  color: #7c7c7c;
 }
 
 .videoPC {
@@ -188,6 +207,7 @@ table {
     left: 850px;
   }
 }
+
 @media (max-width: 750px) {
   .wrap {
     background-image: url(../images/Index/index_bg_phone.webp);
@@ -207,9 +227,15 @@ table {
     display: block;
   }
   .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .SCCD {
     padding-top: 10px;
@@ -219,28 +245,38 @@ table {
     width: 100%;
   }
   .shouContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .shouContainer .infoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .shouContainer .infoContainer .degreeShow {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 8vw;
     line-height: 4.2vh;
     padding: 1.5vh 0;
   }
   .shouContainer .infoContainer .exibitInfo {
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 4vw;
   }
   .shouContainer .infoContainer .exibitInfo p {
     padding: 0.5vh 0;
   }
   .date {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .videoMobile {
     display: block;
@@ -248,18 +284,24 @@ table {
     margin-top: -8vh;
   }
   .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     margin-top: -8vh;
     z-index: 10;
   }
   .pages a {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #000;
     text-align: right;
     line-height: 4vh;
     font-size: 3vh;
   }
-}/*# sourceMappingURL=style_index.css.map */
+}
+/*# sourceMappingURL=style_index.css.map */

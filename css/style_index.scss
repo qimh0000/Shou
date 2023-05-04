@@ -156,117 +156,136 @@ table {
         li {
             padding: 1vh 8%;
             position: relative;
-            z-index:1;
+            z-index: 1;
+
             a {
+                -webkit-transition: color 0.2s;
+                /* For Safari 3.0 to 6.0 */
+                transition: color 0.2s ;
                 font-size: 30px;
                 text-decoration: none;
                 color: #000;
             }
+        }
+
+        a:hover {
+            color: #7c7c7c;
         }
     }
 
 }
 
 
-.videoPC{
+.videoPC {
     display: block;
     position: fixed;
     width: 50vw;
     margin-top: -250px;
     left: 45vw;
 }
-.videoMobile{
+
+.videoMobile {
     display: none;
 }
 
-.phone{
+.phone {
     display: none;
 }
 
-@media(max-width: 2260px){
-    .videoPC{
+@media(max-width: 2260px) {
+    .videoPC {
         position: fixed;
         width: 50vw;
         margin-top: -190px;
         left: 850px;
     }
-    
+
 }
 
 @media(max-width: 750px) {
     .wrap {
-        .header{
+        .header {
             display: none;
         }
-        .video{
+
+        .video {
             display: none;
         }
-        .videoPC{
+
+        .videoPC {
             display: none;
         }
-        .videoMobile{
+
+        .videoMobile {
             display: block;
         }
+
         background-image: url(../images/Index/index_bg_phone.webp);
         padding: 3vw;
         overflow: hidden;
     }
 
-    .phone{
+    .phone {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .SCCD{
+    .SCCD {
         padding-top: 10px;
         width: 70vw;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
-    .shouContainer{
+    .shouContainer {
         display: flex;
         flex-direction: row;
-        .infoContainer{
+
+        .infoContainer {
             display: flex;
             flex-direction: column;
-            .degreeShow{
+
+            .degreeShow {
                 font-family: 'Roboto', sans-serif;
                 font-size: 8vw;
                 line-height: 4.2vh;
                 padding: 1.5vh 0;
             }
-            .exibitInfo{
+
+            .exibitInfo {
                 font-family: 'Noto Sans TC', sans-serif;
                 font-size: 4vw;
-                p{
+
+                p {
                     padding: 0.5vh 0;
                 }
             }
         }
 
-        
+
     }
 
-    .date{
+    .date {
         font-family: 'Roboto', sans-serif;
     }
 
-    .videoMobile{
+    .videoMobile {
         display: block;
         width: 90vw;
         margin-top: -8vh;
     }
 
-    .pages{
+    .pages {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: -8vh;
         z-index: 10;
-        a{
+
+        a {
             font-family: 'Roboto', sans-serif;
             text-decoration: none;
             color: #000;
