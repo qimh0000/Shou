@@ -26,7 +26,6 @@ body {
   text-align: left;
   position: relative;
   top: 2vh;
-  left: 130px;
   padding-bottom: 5vh;
   letter-spacing: 2px;
 }
@@ -108,10 +107,7 @@ iframe {
 }
 
 footer {
-  position: fixed;
   display: block;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: white;
 }
