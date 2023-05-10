@@ -57,10 +57,38 @@ iframe {
 	height: 100%;
 }
 
+.conceptVideo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 98%;
+}
+
+.column_01{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.column_02{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.conceptVideoPC{
+	width: 300px;
+	padding: 1vh 0;
+}
 
 .text {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	padding-top: 50px;
 }
 
 .CH_text,
@@ -74,21 +102,11 @@ iframe {
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
-
+	padding: 50px 20px;
 	p {
 		padding-bottom: 20px;
 		margin: 0;
 	}
-}
-
-.EN_text {
-	font-family: "Helvetica", "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
-	font-weight: 440;
-	color: #424242;
-	text-align: left;
-	font-size: 110%;
-	letter-spacing: 1px;
-	line-height: 20px;
 }
 
 footer {
@@ -114,13 +132,13 @@ li {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	list-style-type: none;
 }
 
 .ft_container img {
 	margin: 5px 30px;
-	width: 7vw;
+	width: 90px;
 	max-width: 100%;
 	height: auto;
 }
@@ -138,7 +156,7 @@ li {
 
 .logo {
 	img {
-		height: 8vh;
+		height: 6vh;
 		filter: brightness(0.1);
 	}
 
@@ -149,12 +167,13 @@ li {
 		align-items: center;
 		text-decoration: none;
 		color: black;
+		font-size: 1vh;
 	}
 }
 
 .logo:hover {
 	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 0.5s;
+	animation: shake 0.9s;
 
 	/* When the animation is finished, start again */
 	animation-iteration-count: infinite;
@@ -207,7 +226,7 @@ li {
 }
 
 
-@media(max-width :1705px) {
+@media(max-width :923px) {
 	.video {
 		position: relative;
 		left: 0px;
@@ -218,15 +237,10 @@ li {
 		margin: 0;
 	}
 
-	.text {
-		padding-top: 50px;
-		flex-direction: row;
-	}
-
 	.CH_text,
 	.EN_text {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 0 5vw;
+		font-size: 2.5vw;
 	}
 
 	.ul_style {
@@ -237,9 +251,17 @@ li {
 		display: block;
 		position: relative;
 	}
+	.title{
+		left: 0;
+	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 616px) {
+	.title{
+		width: 100%;
+		text-align: right;
+		font-size: 10vw;
+	}
 	.homePage{
 		top: 20px;
 		.logo {
@@ -257,5 +279,14 @@ li {
 	.text {
 		flex-direction: column;
 	}
+	.conceptVideoPC{
+		max-width: 300px;
+		width: 100%;
+	}
 
+	.CH_text,
+	.EN_text {
+		padding: 0 5vw;
+		font-size: 3vw;
+	}
 }
