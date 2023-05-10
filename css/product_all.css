@@ -138,10 +138,9 @@ table {
   width: 100%;
 }
 
-.pic:hover {
-  filter: blur(1px);
-}
-
+/*.pic:hover{
+	filter: blur(1px);
+}*/
 .product_01 {
   display: block;
   width: 40%;
