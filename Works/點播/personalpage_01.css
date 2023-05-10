@@ -12,23 +12,6 @@ html,body{
 	background-repeat:center center no-repeat;
 }
 
-/* .elem{
-	position: absolute;
-	top: 5%;	
-	width: 100%;
-	height: auto;
-	background-image:url('bg2.jpg');
-	background-repeat:center center no-repeat;
-} */
-
-/* .bg :hover{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image:url('bg1.jpg');
-	background-repeat:center center no-repeat;
-} */
-
 #all-imgs{
 position: fixed;
 top: 65%;
@@ -47,6 +30,40 @@ overflow:hidden
 	height: 100%;
 }
 
-/* .imgs:hover{  
-	opacity: 0;
-} */
+.title{
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 80vh;
+  height: auto;
+  color: white;
+  font-size: 10vh;
+  letter-spacing: 0.5vh;
+  font-family: Noto Sans CJK TC, sans-serif;
+}
+
+.intro{
+	display: block;
+	position: absolute;
+	left: 1%;
+	width: 65vh;
+	height: auto;
+	color: white;
+	font-size: 3vh;
+	letter-spacing: 0.5vh;
+	font-family: Noto Sans CJK TC, sans-serif;
+  }
+.play{
+	display: block;
+	position: absolute;
+	top: 170%;
+	left: 1%;
+	width: 65vh;
+	height: auto;
+	color: white;
+	font-size: 3vh;
+	letter-spacing: 0.5vh;
+	font-family: Noto Sans CJK TC, sans-serif;
+  }
+
