@@ -67,3 +67,16 @@ overflow:hidden
 	font-family: Noto Sans CJK TC, sans-serif;
   }
 
+  .words{
+	display: block;
+	position: absolute;
+	top: 340%;
+	left: 0%;
+	width: 65vh;
+	height: auto;
+	color: white;
+	font-size: 3vh;
+	letter-spacing: 0.5vh;
+	font-family: Noto Sans CJK TC, sans-serif;
+  }
+
