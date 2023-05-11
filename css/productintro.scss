@@ -1,6 +1,95 @@
 @charset "utf-8";
 /* CSS Document */
 
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	z-index: 30;
+
+	.home {
+		position: fixed;
+		left: 2.25%;
+		top: 3%;
+		width: auto;
+		height: 3.5%;
+	}
+
+	.order {
+		position: fixed;
+		right: 2.25%;
+		top: 3%;
+		width: auto;
+		height: 3.5%;
+	}
+
+	.btn_back{
+		position: fixed;
+		left: 2.25%;
+		top: 10%;
+		width: auto;
+		height: 3.5%;
+		a{
+			font-size: 1.3em;
+		}
+	}
+	
+	.btn_back a:hover{
+		color: #000;
+	}
+	
+
+	a {
+		font-family: 'Noto Sans TC', sans-serif;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		font-size: 2em;
+		color: #727272;
+	}
+
+	a:hover{
+		color: #000;
+	}
+
+	.home a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0.1em;
+		background-color: #000000;
+		transition: opacity 300ms, transform 300ms;
+		opacity: 1;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.home a:hover::after,
+	.home a:focus::after {
+		transform: translate3d(0, 0, 0);
+	}
+
+	.order a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0.1em;
+		background-color: #000000;
+		transition: opacity 300ms, transform 300ms;
+		opacity: 1;
+		transform: translate3d(100%, 0, 0);
+	}
+
+	.order a:hover::after,
+	.order a:focus::after {
+		transform: translate3d(0, 0, 0);
+	}
+
+}
 .personalbox{
   display: block;
   position:absolute;
@@ -41,36 +130,6 @@
   display: none; /* Chrome Safari */
 }
 
-.btn_back{
-	display:block;
-	position: absolute;
-	left: 2.25%;
-	top:10%;
-	width:auto;
-	height: auto;
-	z-index: 8;
-}
-
-.btn_back a{
-	text-decoration: none;
-	color: #898989;
-}
-
-.btn_back a:hover{
-	color: #000;
-}
-
-.btn_back_big{
-	height: auto;
-	font-size: 1em;
-	/*background-color: #FF8587;*/
-}
-
-.btn_back_small{
-	height: auto;
-	font-size: 0.9em;
-	/*background-color: #FF8587;*/
-}
 
 
 .product_ch{
@@ -247,7 +306,8 @@
 
 @media(max-width:1024px){
 	.column_right {
-		display: inline-block;
+		display: flex;
+		flex-direction: column;
 		position: relative;
 		right: 0;
 		left: 0;
@@ -264,9 +324,8 @@
 	}
 	
 	.product_ch{
-		display:inline-block;
+		display:block;
 		position: relative;
-		margin-top: 11%;
 		
 }
 	
