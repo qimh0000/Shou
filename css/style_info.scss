@@ -1,3 +1,134 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*以下正式開始*/
 
 html {
@@ -18,7 +149,49 @@ body {
 	/* Chrome Safari */
 }
 
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	z-index: 30;
 
+	.home {
+		position: fixed;
+		left: 2.25%;
+		top: 3%;
+		width: auto;
+		height: 3.5%;
+	}
+
+	a {
+		font-family: 'Noto Sans TC', sans-serif;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		font-size: 2em;
+		color: #727272;
+	}
+
+	.home a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0.2em;
+		background-color: #727272;
+		transition: opacity 300ms, transform 300ms;
+		opacity: 1;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.home a:hover::after,
+	.home a:focus::after {
+		transform: translate3d(0, 0, 0);
+	}
+
+}
 
 .title {
 	font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
@@ -27,9 +200,8 @@ body {
 	color: #424242;
 	text-align: left;
 	position: relative;
-	top: 2vh;
-	left: 130px;
-	padding-bottom: 5vh;
+	top: 10vh;
+	margin-bottom: 20vh;
 	letter-spacing: 2px;
 }
 
@@ -57,10 +229,38 @@ iframe {
 	height: 100%;
 }
 
+.conceptVideo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 98%;
+}
+
+.column_01{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.column_02{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.conceptVideoPC{
+	width: 300px;
+	padding: 1vh 0;
+}
 
 .text {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	padding-top: 50px;
 }
 
 .CH_text,
@@ -74,28 +274,15 @@ iframe {
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
-
+	padding: 50px 20px;
 	p {
 		padding-bottom: 20px;
 		margin: 0;
 	}
 }
 
-.EN_text {
-	font-family: "Helvetica", "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
-	font-weight: 440;
-	color: #424242;
-	text-align: left;
-	font-size: 110%;
-	letter-spacing: 1px;
-	line-height: 20px;
-}
-
 footer {
-	position: fixed;
 	display: block;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	background-color: white;
 }
@@ -114,13 +301,13 @@ li {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	list-style-type: none;
 }
 
 .ft_container img {
 	margin: 5px 30px;
-	width: 7vw;
+	width: 90px;
 	max-width: 100%;
 	height: auto;
 }
@@ -138,7 +325,7 @@ li {
 
 .logo {
 	img {
-		height: 8vh;
+		height: 6vh;
 		filter: brightness(0.1);
 	}
 
@@ -149,12 +336,13 @@ li {
 		align-items: center;
 		text-decoration: none;
 		color: black;
+		font-size: 1vh;
 	}
 }
 
 .logo:hover {
 	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 0.5s;
+	animation: shake 0.9s;
 
 	/* When the animation is finished, start again */
 	animation-iteration-count: infinite;
@@ -207,7 +395,7 @@ li {
 }
 
 
-@media(max-width :1705px) {
+@media(max-width :923px) {
 	.video {
 		position: relative;
 		left: 0px;
@@ -218,15 +406,10 @@ li {
 		margin: 0;
 	}
 
-	.text {
-		padding-top: 50px;
-		flex-direction: row;
-	}
-
 	.CH_text,
 	.EN_text {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 0 5vw;
+		font-size: 1.6vw;
 	}
 
 	.ul_style {
@@ -237,9 +420,18 @@ li {
 		display: block;
 		position: relative;
 	}
+	.title{
+		left: 0;
+	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 616px) {
+	.title{
+		width: 100%;
+		text-align: right;
+		font-size: 10vw;
+		margin-bottom: 10vh;
+	}
 	.homePage{
 		top: 20px;
 		.logo {
@@ -257,5 +449,14 @@ li {
 	.text {
 		flex-direction: column;
 	}
+	.conceptVideoPC{
+		max-width: 300px;
+		width: 100%;
+	}
 
+	.CH_text,
+	.EN_text {
+		padding: 0 5vw;
+		font-size: 3vw;
+	}
 }
