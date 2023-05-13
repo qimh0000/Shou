@@ -20,21 +20,43 @@ function pre(){
   }
 }
 
+//change bg to bg2
 document.addEventListener('DOMContentLoaded', function () {
-  let elem = document.getElementById('all-imgs');
+  let elem = document.getElementById('imgs1');//pic1
+  let elem2 = document.getElementById('imgs2');//pic2
+  let elem7 = document.getElementById('imgs7');//pic7
+
   let bg = document.getElementById('bg');
 
-  //滑鼠移入時改變背景顏色（藍）
+  //滑鼠移入時改變背景//pic1&pic2
   elem.addEventListener('mouseover', function () {
+    bg.style.backgroundImage = "url(2.jpg)";
+  }, false);
+
+  elem2.addEventListener('mouseover', function () {
     bg.style.backgroundImage = "url(bg2.jpg)";
   }, false);
 
-  //滑鼠移出時恢復背景顏色
+  elem7.addEventListener('mouseover', function () {
+    bg.style.backgroundImage = "url(1.jpg)";
+  }, false);
+
+  //滑鼠移出時恢復背景//pic1&pic2
   elem.addEventListener('mouseout', function () {
+    bg.style.backgroundImage = "";
+  }, false);
+
+  elem2.addEventListener('mouseout', function () {
+    bg.style.backgroundImage = "";
+  }, false);
+
+  elem7.addEventListener('mouseout', function () {
     bg.style.backgroundImage = "";
   }, false);
 })
 </script>
+
+
 </head>
 <body>
   <div id="bg">
@@ -43,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="title_01">國際特色組織</div>
       <!--介紹-->
       <div class="intro">你的特色被綁架了，你的特色不見了，交給國際特色組織來幫你找回你的特色！</div>
-        <div class="play">
-          <a href="">PLAY</a>
+        <div id="play">
+          <a>PLAY</a>
         </div>
         <div class="words">
           <a>思源黑體</a>
@@ -54,19 +76,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
   <div id="all-imgs"> <!-- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 -->
     <div class="imgs" ><!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好-->
-      <a href="3.mp4"><img src="1.jpg" /></a><!--这里的图片换上到时候自己对应的图片-->
-      <a href="3.mp4"><img src="2.jpg" /></a>
-      <img src="1.jpg" />
-      <img src="2.jpg" />
-      <img src="1.jpg" />
-      <img src="2.jpg" />
-      <img src="1.jpg" />
-      <img src="2.jpg" />
-      <!-- <video class="video" src="3.mp4" controls playsinline></video>
-      <video class="video" src="3.mp4" controls playsinline></video>
-      <video class="video" src="3.mp4" controls playsinline></video>
-      <video class="video" src="3.mp4" controls playsinline></video> -->
+      <div id="imgs1"><a href="3.mp4"><img src="1.jpg" /></a><!--这里的图片换上到时候自己对应的图片--></div>
+      <div id="imgs2"><a href="3.mp4"><img src="2.jpg" /></a></div>
+      <div><a href="3.mp4"><img src="1.jpg" /></a></div>
+      <div><a href="3.mp4"><img src="2.jpg" /></a></div>
+      <div><a href="3.mp4"><img src="1.jpg" /></a></div>
+      <div><a href="3.mp4"><img src="2.jpg" /></a></div>
+      <div id="imgs7"><a href="3.mp4"><img src="1.jpg" /></a></div>
     </div>
+
   <div>
     <div onclick="pre()" style="float:left;cursor:pointer">BACK</div>
     <div onclick="nex()" style="float:right;cursor:pointer">MORE</div>

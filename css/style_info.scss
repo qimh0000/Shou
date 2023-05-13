@@ -363,14 +363,14 @@ li {
 
 .homePage{
 	position: fixed;
-	left: 2.5%;
-	bottom: 10vh;
+	left: 2%;
+	top: 4vh;
 	z-index: 15;
 }
 
 .logo {
 	img {
-		height: 6vh;
+		height: 5vh;
 		filter: brightness(0.1);
 	}
 
@@ -387,7 +387,7 @@ li {
 
 .logo:hover {
 	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 0.9s;
+	animation: shake 0.5s;
 
 	/* When the animation is finished, start again */
 	animation-iteration-count: infinite;
