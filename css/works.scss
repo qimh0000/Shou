@@ -133,13 +133,14 @@ table {
 
 body{
     overflow: hidden;
+    background-color: black;
 }
 
 
 
 .container {
     width: 400vw;
-
+    height: 239.36vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,12 +153,14 @@ body{
 
     img {
         width: 100%
+        
     }
 
     .bg {
         position: absolute;
         background-color: black;
         width: 400vw;
+        
     }
 }
 
@@ -247,3 +250,13 @@ body{
 	}
 }
 
+@media (max-width: 500px){
+    .bg{
+        transform: rotate(90deg)
+    }
+
+    .container{
+        width:239.36vw;
+        height: 100%
+    }
+}

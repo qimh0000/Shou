@@ -133,10 +133,12 @@ table {
 /*以下正式開始*/
 body {
   overflow: hidden;
+  background-color: black;
 }
 
 .container {
   width: 400vw;
+  height: 239.36vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,5 +227,14 @@ body {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@media (max-width: 500px) {
+  .bg {
+    transform: rotate(90deg);
+  }
+  .container {
+    width: 239.36vw;
+    height: 100%;
   }
 }/*# sourceMappingURL=works.css.map */
