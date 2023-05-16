@@ -1,0 +1,460 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*以下正式開始*/
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(../images/Info/Info_bg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin: 0px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	/* Chrome Safari */
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	z-index: 30;
+
+	.home {
+		position: fixed;
+		left: 2.25%;
+		top: 3%;
+		width: auto;
+		height: 3.5%;
+	}
+
+	a {
+		font-family: 'Noto Sans TC', sans-serif;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		font-size: 2em;
+		color: #727272;
+	}
+
+	.home a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0.2em;
+		background-color: #727272;
+		transition: opacity 300ms, transform 300ms;
+		opacity: 1;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.home a:hover::after,
+	.home a:focus::after {
+		transform: translate3d(0, 0, 0);
+	}
+
+}
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	z-index: 30;
+
+	.home {
+		position: fixed;
+		left: 2.25%;
+		top: 3%;
+		width: auto;
+		height: 3.5%;
+	}
+
+	a {
+		font-family: 'Noto Sans TC', sans-serif;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		font-size: 2em;
+		color: #727272;
+	}
+
+	.home a::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0.2em;
+		background-color: #727272;
+		transition: opacity 300ms, transform 300ms;
+		opacity: 1;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.home a:hover::after,
+	.home a:focus::after {
+		transform: translate3d(0, 0, 0);
+	}
+
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1vh 1vw;
+}
+
+h1{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    margin: 7vh;
+}
+
+.sponsor {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	background-color: white;
+}
+
+
+li {
+	font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+	color: #424242;
+	font-size: 20px;
+	font-weight: 440;
+	letter-spacing: 2px;
+    padding: 1%;
+}
+
+.ul_style {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style-type: none;
+    img{
+        width: 17vw;
+    }
+    .LiquidArt{
+        img{
+            width: 9vw;
+        }
+    }
+    .deartaward{
+        img{
+            width: 8vw;
+        }
+    }
+
+}
+
+
+
+.ft_container li a:hover img {
+	filter: brightness(0);
+}
+
+.homePage{
+	position: fixed;
+	left: 2%;
+	top: 4vh;
+	z-index: 15;
+}
+
+.logo {
+	img {
+		height: 5vh;
+		filter: brightness(0.1);
+	}
+
+	a {
+		font-family: 'Roboto',sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		color: black;
+		font-size: 1vh;
+	}
+}
+
+.logo:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: shake 0.5s;
+
+	/* When the animation is finished, start again */
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+
+@media(max-width :923px) {
+
+	.ul_style {
+        img{
+            width: 20vw;
+        }
+        .LiquidArt{
+            img{
+                width: 12vw;
+            }
+        }
+        .deartaward{
+            img{
+                width: 11vw;
+            }
+        }
+    
+    }
+
+	footer {
+		display: block;
+		position: relative;
+	}
+	.title{
+		left: 0;
+	}
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 6vw;
+        margin: 4vh;
+    }
+	.title{
+		width: 100%;
+		text-align: right;
+		font-size: 10vw;
+		margin-bottom: 10vh;
+	}
+	.homePage{
+		top: 20px;
+		.logo {
+			img {
+				height: 5vh;
+				filter: brightness(0.1);
+			}
+		
+			a {
+				font-size: 1vh;
+			}
+		}
+		
+	}
+	.text {
+		flex-direction: column;
+	}
+
+    li{
+        padding: 5vh 0;
+        text-align: center;
+    } 
+
+    .ul_style {
+        img{
+            width: 60%;
+        }
+        .LiquidArt{
+            img{
+                width: 80%;
+            }
+        }
+        .deartaward{
+            img{
+                width: 45%;
+            }
+        }
+    
+    }
+}
