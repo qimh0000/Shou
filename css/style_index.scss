@@ -154,7 +154,7 @@ table {
         flex-direction: row;
 
         li {
-            padding: 1vh 8%;
+            padding: 1vh 4vw;
             position: relative;
             z-index: 1;
 
@@ -293,13 +293,18 @@ table {
         margin-top: -8vh;
     }
 
+    .pagewrap{
+        margin-top: -8vh;
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-top: -8vh;
+        margin: 0;
+        position: absolute;
+        right: 0;
         z-index: 10;
-
+        width: 50%;
         a {
             font-family: 'Roboto', sans-serif;
             text-decoration: none;

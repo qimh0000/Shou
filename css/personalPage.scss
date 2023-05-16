@@ -148,7 +148,7 @@ body {
 
 	/* height: auto; */
 	img {
-		height: 8vh;
+		height: 5vh;
 	}
 }
 
@@ -159,6 +159,7 @@ body {
 	text-decoration: none;
 	color: white;
 }
+
 
 .logo:hover {
 	/* Start the shake animation and make the animation last for 0.5 seconds */
@@ -243,7 +244,7 @@ main {
 	align-items: flex-end;
 	justify-content: center;
 	width: 20%;
-	min-width: 400px;
+	min-width: 500px;
 	height: 100%;
 	padding-right: 2%;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -284,6 +285,12 @@ main {
 	width: auto;
 	height: auto;
 	z-index: 20;
+	a{
+		color: #ffffff;
+	}
+	a:hover{
+		color: #acacac;
+	}
 
 }
 
